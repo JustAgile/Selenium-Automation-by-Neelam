@@ -1,0 +1,4 @@
+Automation.disabledListeners=true
+Automation.outdir=/test-output
+AutomationxmlTemplateFile=C\:\\Users\\Neelam\\Desktop\\Selenium Practice\\Automation\\TestNG.xml
+eclipse.preferences.version=1

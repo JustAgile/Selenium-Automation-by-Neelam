@@ -1,0 +1,5 @@
+package catalog.Automation.pages;
+
+public class SignInPage {
+
+}

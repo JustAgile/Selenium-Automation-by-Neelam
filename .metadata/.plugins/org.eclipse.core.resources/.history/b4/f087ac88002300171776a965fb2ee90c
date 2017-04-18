@@ -1,0 +1,33 @@
+package catalog.Automation.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import common.CommonMethods;
+
+public class WelcomePage {
+	private WebDriver driver;
+	public CommonMethods CM;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='bodyContent']/div/div[1]/a[2]/u")
+	private WebElement CREATEANACCOUNT;
+	
+	public WelcomePage(WebDriver driver){
+		this.driver = driver;
+		PageFactory.initElements(driver,this);
+		CM=new CommonMethods();
+		//CM.verifyText("Welcome to iBusiness");
+		
+	}
+
+	public CreateAccount clickCreateAnAccount(){
+		CM.click(CREATEANACCOUNT);
+		
+		return new CreateAccount(driver);
+		
+	}
+
+}

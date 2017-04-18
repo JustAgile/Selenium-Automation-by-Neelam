@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="235" started-at="2017-04-17T00:01:53Z" finished-at="2017-04-17T00:01:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="235" started-at="2017-04-17T00:01:53Z" finished-at="2017-04-17T00:01:53Z">
+      <class name="catalog.Automation.tests.CreateAccountTest">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:catalog.Automation.tests.CreateAccountTest@7823a2f9]" name="setup" is-config="true" duration-ms="0" started-at="2017-04-16T17:01:53Z" finished-at="2017-04-16T17:01:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Users\Neelam\Desktop\Selenium Practice\selenium\Drivers\geckodriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Neelam\Desktop\Selenium Practice\selenium\Drivers\geckodriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:123)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:118)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:38)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:112)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:302)
+	at org.openqa.selenium.firefox.FirefoxDriver.createCommandExecutor(FirefoxDriver.java:312)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:272)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:267)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:263)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:122)
+	at catalog.Automation.common.CommonMethods.openBrowser(CommonMethods.java:62)
+	at catalog.Automation.tests.CreateAccountTest.setup(CreateAccountTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="navigate(java.lang.String)[pri:0, instance:catalog.Automation.tests.CreateAccountTest@7823a2f9]" name="navigate" is-config="true" duration-ms="0" started-at="2017-04-16T17:01:53Z" finished-at="2017-04-16T17:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="SKIP" signature="createAccount01()[pri:0, instance:catalog.Automation.tests.CreateAccountTest@7823a2f9]" name="createAccount01" duration-ms="2" started-at="2017-04-16T17:01:53Z" finished-at="2017-04-16T17:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount01 -->
+        <test-method status="FAIL" signature="after(org.testng.ITestResult)[pri:0, instance:catalog.Automation.tests.CreateAccountTest@7823a2f9]" name="after" is-config="true" duration-ms="0" started-at="2017-04-16T17:01:53Z" finished-at="2017-04-16T17:01:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAccount01 status=SKIP method=CreateAccountTest.createAccount01()[pri:0, instance:catalog.Automation.tests.CreateAccountTest@7823a2f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at catalog.Automation.tests.CreateAccountTest.after(CreateAccountTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- catalog.Automation.tests.CreateAccountTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

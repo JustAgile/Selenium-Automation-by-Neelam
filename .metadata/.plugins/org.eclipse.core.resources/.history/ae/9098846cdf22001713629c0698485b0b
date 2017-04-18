@@ -1,0 +1,58 @@
+package Tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import common.CommonMethods;
+import pages.CreateAccount;
+import pages.WelcomePage;
+
+public class CreateAccountTest {
+	private WebDriver driver;
+	public CommonMethods CM;
+	
+	@Parameters({ "firefox"})
+	@BeforeClass(alwaysRun=true)
+	public void setup(String firefox) throws Exception {
+		CM = new CommonMethods();
+		driver = CM.openBrowser(firefox);
+	
+	}
+	
+	@Parameters({ "firefox"})
+	@BeforeMethod(alwaysRun=true)
+	public void navigate(String firefox) throws Exception {
+		CM.navigateToSite(firefox);
+		driver = CM.getDriver();
+	
+	}
+	
+	@AfterMethod(alwaysRun=true) 
+	public void after(ITestResult it) throws Exception{
+		//it.setThrowable(new Throwable("Error capture: blah blah. \n" + "System error: " + it.getThrowable().getMessage()));
+		//CF.postResults(it);
+	    driver.manage().deleteAllCookies(); 
+		CM.tearDown();
+	}	
+	
+@Test
+public void createAccount01(){
+	WelcomePage WelcomePage = new WelcomePage(driver);
+	//System.out.println("hello");
+	
+	
+	CreateAccount CreateAccount =WelcomePage.clickCreateAnAccount();
+//	AccountLoginPages loginPage = new AccountLoginPages(driver);
+	//SignInPage.validLogin();
+	CreateAccount.clickContinue();
+	//SignInPage.clickLogOff();
+	
+	
+}
+}
+

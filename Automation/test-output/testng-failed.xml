@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="none">
+  <parameter name="remoteBrowserType" value="Firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="catalog.Automation.tests.CreateAccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="after"/>
+          <include name="createAccount01"/>
+        </methods>
+      </class> <!-- catalog.Automation.tests.CreateAccountTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
